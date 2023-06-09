@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NEOSIFY - Ecosystem</title>
+	<meta property="og:title" content="NEOSIFY - Ecosystem">
+	<meta property="og:description" content="Description">
+	<meta property="og:url" content="/">
+	<meta property="og:site_name" content="NEOSIFY - Ecosystem">
+	<!-- fonts -->
+	<link rel="preload" href="/fonts/Outfit-Regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/fonts/RedHatDisplay-Black.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/fonts/RedHatDisplay-Bold.woff2" as="font" type="font/woff2" crossorigin>
+	<!-- styles -->
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body class="page page--ecosystem">
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<header class="header header--index">
+			<div class="container">
+				<div class="header__inner" data-controller="nav">
+					<button class="header__burger" data-action="click->nav#open">
+						<svg class="icon ">
+							<use xlink:href="img/sprite.svg#icons-menu"></use>
+						</svg>
+					</button>
+					<a href="/" class="header__logo-wrapper">
+						<img src="img/logo-full.svg" alt="Neos" width="172" height="40" loading="eager" class="header__logo">
+					</a>
+					<nav class="header__nav nav">
+						<ul class="nav__list">
+							<li class="nav__item has-submenu">
+								<button class="nav__link">Products</button>
+								<div class="nav__submenu">
+									<ul class="nav__submenu-list">
+										<li class="nav__submenu-item">
+											<a href="/stake" class="nav__submenu-link">
+												<svg class="icon ">
+													<use xlink:href="img/sprite.svg#icons-stake"></use>
+												</svg>
+												<div class="nav__submenu-link-text">
+													<div class="nav__submenu-link-title flex">
+														Staking
+													</div>
+													<div class="nav__submenu-link-desc">Get higher APY</div>
+												</div>
+											</a>
+										</li>
+										<li class="nav__submenu-item">
+											<div class="nav__submenu-link is-inactive">
+												<svg class="icon ">
+													<use xlink:href="img/sprite.svg#icons-liquidity"></use>
+												</svg>
+												<div class="nav__submenu-link-text">
+													<div class="nav__submenu-link-title">Liquidity</div>
+													<div class="nav__submenu-link-desc">To be announced</div>
+												</div>
+											</div>
+										</li>
+										<li class="nav__submenu-item">
+											<a href="/referral" class="nav__submenu-link">
+												<svg class="icon ">
+													<use xlink:href="img/sprite.svg#icons-users"></use>
+												</svg>
+												<div class="nav__submenu-link-text">
+													<div class="nav__submenu-link-title">Red Pill</div>
+													<div class="nav__submenu-link-desc">Expand our community</div>
+												</div>
+											</a>
+										</li>
+										<li class="nav__submenu-item">
+											<a href="/rewards" class="nav__submenu-link">
+												<svg class="icon ">
+													<use xlink:href="img/sprite.svg#icons-coins"></use>
+												</svg>
+												<div class="nav__submenu-link-text">
+													<div class="nav__submenu-link-title">Rewards</div>
+													<div class="nav__submenu-link-desc">Get NEOS for daily actions</div>
+												</div>
+											</a>
+										</li>
+										<li class="nav__submenu-item">
+											<a href="/levels" class="nav__submenu-link">
+												<svg class="icon ">
+													<use xlink:href="img/sprite.svg#icons-grow"></use>
+												</svg>
+												<div class="nav__submenu-link-text">
+													<div class="nav__submenu-link-title flex">
+														Levels <span class="badge badge--danger ml-8">NEW</span>
+													</div>
+													<div class="nav__submenu-link-desc">Become a VIP</div>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav__item has-submenu">
+								<button class="nav__link">Company</button>
+								<div class="nav__submenu">
+									<ul class="nav__submenu-list">
+										<li class="nav__submenu-item">
+											<a href="/about" class="nav__submenu-link">
+												<svg class="icon ">
+													<use xlink:href="img/sprite.svg#icons-business"></use>
+												</svg>
+												<div class="nav__submenu-link-text">
+													<div class="nav__submenu-link-title">About</div>
+													<div class="nav__submenu-link-desc">Who we are</div>
+												</div>
+											</a>
+										</li>
+										<li class="nav__submenu-item">
+											<a href="https://www.trustpilot.com/review/neosify.com" target="_blank" class="nav__submenu-link">
+												<svg class="icon ">
+													<use xlink:href="img/sprite.svg#icons-star"></use>
+												</svg>
+												<div class="nav__submenu-link-text">
+													<div class="nav__submenu-link-title">Reviews</div>
+													<div class="nav__submenu-link-desc">People trust us</div>
+												</div>
+											</a>
+										</li>
+										<li class="nav__submenu-item">
+											<a href="/ecosystem" class="nav__submenu-link">
+												<svg class="icon ">
+													<use xlink:href="img/sprite.svg#icons-bolt"></use>
+												</svg>
+												<div class="nav__submenu-link-text">
+													<div class="nav__submenu-link-title">Ecosystem</div>
+													<div class="nav__submenu-link-desc">Learn about Matrix Technology</div>
+												</div>
+											</a>
+										</li>
+										<li class="nav__submenu-item">
+											<a href="/matrix" class="nav__submenu-link">
+												<svg class="icon ">
+													<use xlink:href="img/sprite.svg#icons-rocket"></use>
+												</svg>
+												<div class="nav__submenu-link-text">
+													<div class="nav__submenu-link-title">Matrix</div>
+													<div class="nav__submenu-link-desc">Technology in action</div>
+												</div>
+											</a>
+										</li>
+										<li class="nav__submenu-item">
+											<a href="/community" class="nav__submenu-link">
+												<svg class="icon ">
+													<use xlink:href="img/sprite.svg#icons-thumbs-up"></use>
+												</svg>
+												<div class="nav__submenu-link-text">
+													<div class="nav__submenu-link-title">Community</div>
+													<div class="nav__submenu-link-desc">Live activity in Social Media</div>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav__item has-submenu">
+								<button class="nav__link">Learn</button>
+								<div class="nav__submenu">
+									<ul class="nav__submenu-list">
+										<li class="nav__submenu-item">
+											<a href="https://faq.neosify.com" target="_blank" class="nav__submenu-link">
+												<svg class="icon ">
+													<use xlink:href="img/sprite.svg#icons-question"></use>
+												</svg>
+												<div class="nav__submenu-link-text">
+													<div class="nav__submenu-link-title">FAQ</div>
+													<div class="nav__submenu-link-desc">All the answers</div>
+												</div>
+											</a>
+										</li>
+										<li class="nav__submenu-item">
+											<button class="nav__submenu-link" onclick="window.Intercom &amp;&amp; window.Intercom('show')">
+												<svg class="icon ">
+													<use xlink:href="img/sprite.svg#icons-book"></use>
+												</svg>
+												<div class="nav__submenu-link-text">
+													<div class="nav__submenu-link-title">Get Help</div>
+													<div class="nav__submenu-link-desc">Online 24/7</div>
+												</div>
+											</button>
+										</li>
+										<li class="nav__submenu-item">
+											<a href="https://docs.neosify.com/" target="_blank" class="nav__submenu-link">
+												<svg class="icon ">
+													<use xlink:href="img/sprite.svg#icons-help"></use>
+												</svg>
+												<div class="nav__submenu-link-text">
+													<div class="nav__submenu-link-title">Documentation</div>
+													<div class="nav__submenu-link-desc">Full disclosure</div>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav__item">
+								<a href="/blog" class="nav__link">Blog</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="nav-mobile hidden" data-nav-target="panel">
+						<div class="nav-mobile__header">
+							<button class="nav-mobile__close" data-action="click->nav#close">
+								<svg class="icon ">
+									<use xlink:href="img/sprite.svg#icons-close"></use>
+								</svg>
+							</button>
+							<a href="/" class="nav-mobile__logo-wrapper">
+								<img src="/img/logo-full.svg" alt="Neos" width="172" height="40" loading="eager" class="nav-mobile__logo">
+							</a>
+						</div>
+						<div class="nav-mobile__body-wrapper">
+							<div class="nav-mobile__body">
+								<nav class="nav-mobile__menu">
+									<ul class="nav-mobile__menu-list">
+										<li class="nav-mobile__menu-item has-submenu" data-controller="accordion">
+											<button class="nav-mobile__menu-link" data-action="click->accordion#toggle">
+												<div class="nav-mobile__menu-link-label">Products</div>
+												<svg class="icon ">
+													<use xlink:href="img/sprite.svg#icons-arrow-down"></use>
+												</svg>
+											</button>
+											<div class="nav-mobile__submenu" data-accordion-target="body">
+												<ul class="nav-mobile__submenu-list">
+													<li class="nav-mobile__submenu-item">
+														<a href="/stake" class="nav-mobile__submenu-link">
+															Staking
+														</a>
+													</li>
+													<li class="nav-mobile__submenu-item">
+														<div class="nav-mobile__submenu-link is-inactive">
+															Liquidity
+															<div class="nav-mobile__submenu-badge">Coming Soon</div>
+														</div>
+													</li>
+													<li class="nav-mobile__submenu-item">
+														<a href="/referral" class="nav-mobile__submenu-link">Red Pill</a>
+													</li>
+													<li class="nav-mobile__submenu-item">
+														<a href="/levels" class="nav-mobile__submenu-link">
+															Levels
+															<div class="nav-mobile__submenu-badge nav-mobile__submenu-badge--danger">NEW </div>
+														</a>
+													</li>
+													<li class="nav-mobile__submenu-item">
+														<a href="/rewards" class="nav-mobile__submenu-link">Rewards</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="nav-mobile__menu-item has-submenu" data-controller="accordion">
+											<button class="nav-mobile__menu-link" data-action="click->accordion#toggle">
+												<div class="nav-mobile__menu-link-label">Company</div>
+												<svg class="icon ">
+													<use xlink:href="img/sprite.svg#icons-arrow-down"></use>
+												</svg>
+											</button>
+											<div class="nav-mobile__submenu" data-accordion-target="body">
+												<ul class="nav-mobile__submenu-list">
+													<li class="nav-mobile__submenu-item">
+														<a href="/about" class="nav-mobile__submenu-link">About</a>
+													</li>
+													<li class="nav-mobile__submenu-item">
+														<a href="https://www.trustpilot.com/review/neosify.com" target="_blank" class="nav-mobile__submenu-link">Reviews</a>
+													</li>
+													<li class="nav-mobile__submenu-item">
+														<a href="/ecosystem" class="nav-mobile__submenu-link">Ecosystem</a>
+													</li>
+													<li class="nav-mobile__submenu-item">
+														<a href="/matrix" class="nav-mobile__submenu-link">Matrix</a>
+													</li>
+													<li class="nav-mobile__submenu-item">
+														<a href="/community" class="nav-mobile__submenu-link">Community</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="nav-mobile__menu-item has-submenu" data-controller="accordion">
+											<button class="nav-mobile__menu-link" data-action="click->accordion#toggle">
+												<div class="nav-mobile__menu-link-label">Learn</div>
+												<svg class="icon ">
+													<use xlink:href="img/sprite.svg#icons-arrow-down"></use>
+												</svg>
+											</button>
+											<div class="nav-mobile__submenu" data-accordion-target="body">
+												<ul class="nav-mobile__submenu-list">
+													<li class="nav-mobile__submenu-item">
+														<a href="https://faq.neosify.com" target="_blank" class="nav-mobile__submenu-link">FAQ</a>
+													</li>
+													<li class="nav-mobile__submenu-item">
+														<a href="https://docs.neosify.com/" target="_blank" class="nav-mobile__submenu-link">Documentation</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="nav-mobile__menu-item">
+											<a href="/blog" class="nav-mobile__menu-link">
+												<div class="nav-mobile__menu-link-label">Blog</div>
+											</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+					<div class="header__actions">
+						<form action="/site/lang" method="post" class="header__lang-container" data-controller="dropdown lang">
+							<button type="button" class="header__lang" data-dropdown-target="trigger">
+								<svg class="icon ">
+									<use xlink:href="img/sprite.svg#icons-globe"></use>
+								</svg>
+							</button>
+							<div class="header__lang-dropdown dropdown hidden" data-dropdown-target="dropdown">
+								<div class="dropdown-menu">
+									<ul class="dropdown-menu__list">
+										<li class="dropdown-menu__item">
+											<button type="button" class="dropdown-menu__button" data-lang="en" data-action="lang#switch">
+												<img src="/img/langs/en.png" alt="" loading="lazy">
+												<span class="dropdown-menu__button-label">English</span>
+											</button>
+										</li>
+										<li class="dropdown-menu__item">
+											<button type="button" class="dropdown-menu__button" data-lang="id" data-action="lang#switch">
+												<img src="/img/langs/id.png" alt="" loading="lazy">
+												<span class="dropdown-menu__button-label">Bahasa Indonesia</span>
+											</button>
+										</li>
+										<li class="dropdown-menu__item">
+											<button type="button" class="dropdown-menu__button" data-lang="de" data-action="lang#switch">
+												<img src="/img/langs/de.png" alt="" loading="lazy">
+												<span class="dropdown-menu__button-label">Deutsch</span>
+											</button>
+										</li>
+										<li class="dropdown-menu__item">
+											<button type="button" class="dropdown-menu__button" data-lang="es" data-action="lang#switch">
+												<img src="/img/langs/es.png" alt="" loading="lazy">
+												<span class="dropdown-menu__button-label">Español</span>
+											</button>
+										</li>
+										<li class="dropdown-menu__item">
+											<button type="button" class="dropdown-menu__button" data-lang="fr" data-action="lang#switch">
+												<img src="/img/langs/fr.png" alt="" loading="lazy">
+												<span class="dropdown-menu__button-label">Français</span>
+											</button>
+										</li>
+										<li class="dropdown-menu__item">
+											<button type="button" class="dropdown-menu__button" data-lang="it" data-action="lang#switch">
+												<img src="/img/langs/it.png" alt="" loading="lazy">
+												<span class="dropdown-menu__button-label">Italiano</span>
+											</button>
+										</li>
+										<li class="dropdown-menu__item">
+											<button type="button" class="dropdown-menu__button" data-lang="ja" data-action="lang#switch">
+												<img src="/img/langs/ja.png" alt="" loading="lazy">
+												<span class="dropdown-menu__button-label">日本語</span>
+											</button>
+										</li>
+										<li class="dropdown-menu__item">
+											<button type="button" class="dropdown-menu__button" data-lang="zh" data-action="lang#switch">
+												<img src="/img/langs/zh.png" alt="" loading="lazy">
+												<span class="dropdown-menu__button-label">简体中文</span>
+											</button>
+										</li>
+										<li class="dropdown-menu__item">
+											<button type="button" class="dropdown-menu__button" data-lang="pl" data-action="lang#switch">
+												<img src="/img/langs/pl.png" alt="" loading="lazy">
+												<span class="dropdown-menu__button-label">Polski</span>
+											</button>
+										</li>
+										<li class="dropdown-menu__item">
+											<button type="button" class="dropdown-menu__button" data-lang="pt" data-action="lang#switch">
+												<img src="/img/langs/pt.png" alt="" loading="lazy">
+												<span class="dropdown-menu__button-label">Português</span>
+											</button>
+										</li>
+										<li class="dropdown-menu__item">
+											<button type="button" class="dropdown-menu__button" data-lang="tr" data-action="lang#switch">
+												<img src="/img/langs/tr.png" alt="" loading="lazy">
+												<span class="dropdown-menu__button-label">Türkçe</span>
+											</button>
+										</li>
+										<li class="dropdown-menu__item">
+											<button type="button" class="dropdown-menu__button" data-lang="ru" data-action="lang#switch">
+												<img src="/img/langs/ru.png" alt="" loading="lazy">
+												<span class="dropdown-menu__button-label">Русский</span>
+											</button>
+										</li>
+										<li class="dropdown-menu__item">
+											<button type="button" class="dropdown-menu__button" data-lang="uk" data-action="lang#switch">
+												<img src="/img/langs/uk.png" alt="" loading="lazy">
+												<span class="dropdown-menu__button-label">Українська</span>
+											</button>
+										</li>
+									</ul>
+								</div>
+								<div class="dropdown__arrow"></div>
+							</div>
+							<input type="hidden" name="LangForm[lang]" value="en" data-lang-target="value"> <input type="hidden" name="source" value="/"> <input type="hidden" name="_csrf" value="SEWxFC0rkH1POw0rdNRO88XNUF2DOQjYFd0Qkr5vUXond_onWWTPFSVzWFpHoQi8qLllOtNmTq5sh1Thi1o1TA==">
+						</form>
+						<a href="login.html" class="header__login">Login</a>
+						<a href="signup.html" class="header__connect btn btn--secondary btn--md w-[200px]">
+							<div class="btn__label">Connect</div>
+							<svg class="icon ">
+								<use xlink:href="img/sprite.svg#icons-bolt"></use>
+							</svg>
+						</a>
+						<a href="signup.html" class="header__connect-icon btn btn--secondary btn--raised btn--sm">
+							<svg class="icon ">
+								<use xlink:href="img/sprite.svg#icons-user"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- end of header -->
+		<!-- content -->
+		<main class="main">
+			<section class="section section--md section--dark bg-[#010804]] bg-cover bg-no-repeat xs:bg-center" style="background-image: url(img/bg-ecosystem.jpg);">
+				<div class="container">
+					<div class="sm:max-w-[510px] xl:ml-120 relative z-page">
+						<div class="uppercase tracking-[5px] mb-16 opacity-50 max-w-[28ch]">What Makes Neosify Tick</div>
+						<h1 class="text-primary-h1 font-black mb-24">Matrix <br> Technology</h1>
+						<div class="mb-40 max-w-[28ch]">To provide seamless DeFi experience, Matrix Technology was designed.</div>
+						<a href="/signup" class="btn btn--secondary btn--md min-w-[240px] mb-24">
+							<div class="btn__label">Get Neosify</div>
+							<svg class="icon ">
+								<use xlink:href="img/sprite.svg#icons-arrow-right"></use>
+							</svg>
+						</a>
+						<div class="gift">
+							<div class="gift__icon icon-raised icon-raised--secondary icon-raised--sm">
+								<svg class="icon ">
+									<use xlink:href="img/sprite.svg#icons-gift"></use>
+								</svg>
+							</div>
+							<div class="gift__text">
+								<div class="gift__title">Welcome Gift</div>
+								<div class="gift__value">100 NEOS</div>
+							</div>
+						</div>
+						<div class="blur blur--blue" style="top: -550px; left: -290px; width: 1040px; height: 1040px;">
+						</div>
+						<div class="blur blur--green" style="top: -150px; left: -570px; width: 900px; height: 900px;"></div>
+						<div class="blur blur--blue" style="top: 110px; left: -750px; width: 1040px; height: 1040px; opacity: 0.2;">
+						</div>
+						<div class="blur blur--green" style="top: -180px; left: -190px; opacity: 0.2;"></div>
+					</div>
+				</div>
+			</section>
+			<section class="section section--lg relative z-page">
+				<div class="container">
+					<div class="text-center max-w-[880px] mx-auto">
+						<p class="text-dark mb-32">Matrix technology is a cutting-edge algorithm, which generates liquidity by crypto arbitrage and ensures the most advantageous APR and APY rates. <br> The algorithm is built through the Oracle technology data management – it analyses the actual platform usage and distributes crypto interest according to it.</p>
+						<a href="https://docs.neosify.com/" target="_blank" class="link">
+							<svg class="icon ">
+								<use xlink:href="img/sprite.svg#icons-book"></use>
+							</svg>
+							To Documentation
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="section section--md !pt-0">
+				<div class="container">
+					<div class="grid xs:grid-cols-2 xl:grid-cols-4 gap-24 xl:gap-40 until-xl:max-w-[664px] until-xl:mx-auto">
+						<div class="card">
+							<div class="card__top">
+								<div class="card__icon icon-raised icon-raised--secondary icon-raised--md">
+									<svg class="icon ">
+										<use xlink:href="img/sprite.svg#icons-coins"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="card__title">No Fees</div>
+							<div class="card__desc">
+								Neosify doesn’t profit from your fees – Matrix technology generates profit when trading crypto pairs across exchanges.
+							</div>
+						</div>
+						<div class="card">
+							<div class="card__top">
+								<div class="card__icon icon-raised icon-raised--secondary icon-raised--md">
+									<svg class="icon ">
+										<use xlink:href="img/sprite.svg#icons-graph"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="card__title">Flexible APY and APR</div>
+							<div class="card__desc">
+								Matrix technology analyzes the platform usage and calculates highest staking rates for the most popular crypto.
+							</div>
+						</div>
+						<div class="card">
+							<div class="card__top">
+								<div class="card__icon icon-raised icon-raised--secondary icon-raised--md">
+									<svg class="icon ">
+										<use xlink:href="img/sprite.svg#icons-stake"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="card__title">Stake Any Crypto</div>
+							<div class="card__desc">
+								The Neosify network supports staking of non-PoS cryptocurrency.
+							</div>
+						</div>
+						<div class="card">
+							<div class="card__top">
+								<div class="card__icon icon-raised icon-raised--secondary icon-raised--md">
+									<svg class="icon ">
+										<use xlink:href="img/sprite.svg#icons-globe"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="card__title">Decentralized</div>
+							<div class="card__desc">
+								Matrix technology is decentralized, thus ensuring security and anonymity of your data and assets.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section--md">
+				<div class="container">
+					<div class="grid sm:grid-cols-2 gap-x-64 gap-y-24 items-center justify-items-center">
+						<div class="relative">
+							<img src="/img/treasury.png" alt="Neos Treasury" width="616" height="529" loading="lazy" class="until-sm:max-w-[80%]">
+							<div class="blur blur--blue" style="top: -380px; left: -780px; opacity: 0.2;">
+							</div>
+							<div class="blur blur--green" style="top: -100px; left: -290px; width: 900px; height: 900px;">
+							</div>
+						</div>
+						<div class="relative">
+							<h2 class="text-primary-h1 font-black">Neosify <br> <mark class="text-secondary">Treasury</mark></h2>
+							<p class="my-24 max-w-[480px]">Neosify Treasury exists for supporting the ecosystem growth. It comprises staking and crypto arbitrage profits.</p>
+							<a href="/signup" class="btn btn--secondary btn--md min-w-[296px]">
+								<div class="btn__label">Earn Crypto Interest</div>
+								<svg class="icon ">
+									<use xlink:href="img/sprite.svg#icons-coins"></use>
+								</svg>
+							</a>
+							<div class="blur blur--blue" style="top: -360px; left: -290px; opacity: 0.15;">
+							</div>
+							<div class="blur blur--green" style="top: -510px; left: 220px; width: 900px; height: 900px; opacity: 0.2;">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section--md !pt-40 relative">
+				<div class="container">
+					<div class="text-center">
+						<h2 class="text-primary-h1 font-black mb-40">Crypto Moves Fast, <br> and <mark class="text-secondary">So Do We</mark> </h2>
+						<p class="text-dark max-w-[770px] mx-auto mb-80">Neosify is always keeping up with the market trends. <br> Here’s how we’ve got here and what we’re planning to surprise you with:</p>
+					</div>
+					<div class="grid lg:grid-cols-[2.85fr,_9.15fr] gap-24 xl:gap-40 mb-64 lg:mb-40">
+						<div class="text-primary-hero text-gray">2021</div>
+						<div class="grid sm:grid-cols-3 gap-24 xl:gap-40">
+							<div class="card">
+								<div class="card__top">
+									<div class="card__icon icon-raised icon-raised--white icon-raised--md">
+										<svg class="icon ">
+											<use xlink:href="img/sprite.svg#icons-check-double"></use>
+										</svg>
+									</div>
+									<span class="card__ext">Q1 2021</span>
+								</div>
+								<div class="card__title text-gray-dark">Neosify Launch</div>
+								<div class="card__desc">
+									A concept of an accessible DeFi platform was formulated. A little bit later Neosify Crypto Wallet was launched.
+								</div>
+							</div>
+							<div class="card">
+								<div class="card__top">
+									<div class="card__icon icon-raised icon-raised--white icon-raised--md">
+										<svg class="icon ">
+											<use xlink:href="img/sprite.svg#icons-check-double"></use>
+										</svg>
+									</div>
+									<span class="card__ext">Q2 - Q3 2021</span>
+								</div>
+								<div class="card__title text-gray-dark">Matrix Technology Introduction</div>
+								<div class="card__desc">
+									Neosify teamwork on developing a decentralized technology for providing liquidity via crypto arbitrage and analyzing the platform usage. Matrix Technology was introduced.
+								</div>
+							</div>
+							<div class="card">
+								<div class="card__top">
+									<div class="card__icon icon-raised icon-raised--white icon-raised--md">
+										<svg class="icon ">
+											<use xlink:href="img/sprite.svg#icons-check-double"></use>
+										</svg>
+									</div>
+									<span class="card__ext">Q4 2021</span>
+								</div>
+								<div class="card__title text-gray-dark">Neosify Community Establishment</div>
+								<div class="card__desc">
+									Followed by a huge success of Matrix technology, more and more people started to participate in the project life. A community of the Neosify enthusiasts was formed.
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid lg:grid-cols-[2.85fr,_9.15fr] gap-24 xl:gap-40 mb-64 lg:mb-40">
+						<div class="text-primary-hero text-gray">2022</div>
+						<div class="grid sm:grid-cols-3 gap-24 xl:gap-40">
+							<div class="card">
+								<div class="card__top">
+									<div class="card__icon icon-raised icon-raised--white icon-raised--md">
+										<svg class="icon ">
+											<use xlink:href="img/sprite.svg#icons-check-double"></use>
+										</svg>
+									</div>
+									<span class="card__ext">Q1 - Q2 2022</span>
+								</div>
+								<div class="card__title text-gray-dark">Neosify Treasury Formation</div>
+								<div class="card__desc">
+									Neosify had accumulated enough funds to hold its own treasury. Higher staking rates were offered.
+								</div>
+							</div>
+							<div class="card">
+								<div class="card__top">
+									<div class="card__icon icon-raised icon-raised--white icon-raised--md">
+										<svg class="icon ">
+											<use xlink:href="img/sprite.svg#icons-check-double"></use>
+										</svg>
+									</div>
+									<span class="card__ext">Q3 2022</span>
+								</div>
+								<div class="card__title text-gray-dark">Algorithmic Staking</div>
+								<div class="card__desc">
+									Introduction of algorithmic staking powered up by Matrix Technology. Thanks to Neosify Algorithmic Trading, users can accumulate their assets with advantagious APY rates.
+								</div>
+							</div>
+							<div class="card">
+								<div class="card__top">
+									<div class="card__icon icon-raised icon-raised--white icon-raised--md">
+										<svg class="icon ">
+											<use xlink:href="img/sprite.svg#icons-check-double"></use>
+										</svg>
+									</div>
+									<span class="card__ext">Q4 2022</span>
+								</div>
+								<div class="card__title text-gray-dark">AMM Protocol Launch</div>
+								<div class="card__desc">
+									Neosify will release a native AMM protocol based on Uniswap model, with certain improvements.
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid lg:grid-cols-[2.85fr,_9.15fr] gap-24 xl:gap-40">
+						<div class="text-primary-hero text-gray">2023</div>
+						<div class="grid sm:grid-cols-3 gap-24 xl:gap-40">
+							<div class="card sm:col-span-2">
+								<div class="card__top">
+									<div class="card__icon icon-raised icon-raised--secondary icon-raised--md">
+										<svg class="icon ">
+											<use xlink:href="img/sprite.svg#icons-image"></use>
+										</svg>
+									</div>
+									<span class="card__ext text-secondary">Q1 - Q2 2023</span>
+								</div>
+								<div class="card__title">Neosify NFTs</div>
+								<div class="card__desc">
+									Neosify will introduce unique NFT avatars for users available for minting. The avatars can be obtained through progressing on Neosify, participating in the ecosystem and facilitating its growth.
+								</div>
+							</div>
+							<div class="card">
+								<div class="card__top">
+									<div class="card__icon icon-raised icon-raised--secondary icon-raised--md">
+										<svg class="icon ">
+											<use xlink:href="img/sprite.svg#icons-phone"></use>
+										</svg>
+									</div>
+									<span class="card__ext text-secondary">Q1 2023</span>
+								</div>
+								<div class="card__title">Neosify Mobile App Launch</div>
+								<div class="card__desc">
+									The Neosify team’s working on a convenient mobile app on Android and iOS.
+								</div>
+							</div>
+							<div class="card">
+								<div class="card__top">
+									<div class="card__icon icon-raised icon-raised--secondary icon-raised--md">
+										<svg class="icon ">
+											<use xlink:href="img/sprite.svg#icons-graph"></use>
+										</svg>
+									</div>
+									<span class="card__ext text-secondary">Q3 2023</span>
+								</div>
+								<div class="card__title">NEOS Token on Exchanges</div>
+								<div class="card__desc">
+									NEOS token will make it to Uniswap exchange! Uniswap integration will open up plenty of new trading features for Neosify users.
+								</div>
+							</div>
+							<div class="card">
+								<div class="card__top">
+									<div class="card__icon icon-raised icon-raised--secondary icon-raised--md">
+										<svg class="icon ">
+											<use xlink:href="img/sprite.svg#icons-rocket"></use>
+										</svg>
+									</div>
+									<span class="card__ext text-secondary">Q4 2023</span>
+								</div>
+								<div class="card__title">Zion Metaverse Launch</div>
+								<div class="card__desc">
+									Neosify will build a digital space where all like minded people can share their ideas and thoughts.
+								</div>
+							</div>
+							<div class="card">
+								<div class="card__top">
+									<div class="card__icon icon-raised icon-raised--secondary icon-raised--md">
+										<svg class="icon ">
+											<use xlink:href="img/sprite.svg#icons-question"></use>
+										</svg>
+									</div>
+									<span class="card__ext text-secondary">Anytime You Want</span>
+								</div>
+								<div class="card__title">It’s up to You to Decide</div>
+								<div class="card__desc mb-24">
+									Do you have a revolutionary idea how to make Neosify better for all of us? Contact us!
+								</div>
+								<button class="btn btn--secondary btn--md w-full" onclick="window.Intercom &amp;&amp; window.Intercom('show')">
+									<div class="btn__label">Contact Us</div>
+									<svg class="icon ">
+										<use xlink:href="img/sprite.svg#icons-arrow-right"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="blur blur--blue" style="bottom: -500px; left: -580px; opacity: 0.15;">
+				</div>
+				<div class="blur blur--green" style="bottom: 260px; left: -420px; width: 900px; height: 900px; opacity: 0.2;">
+				</div>
+				<div class="blur blur--blue" style="top: 550px; right: 40px; opacity: 0.2;">
+				</div>
+				<div class="blur blur--green" style="top: 260px; right: -320px; width: 900px; height: 900px; opacity: 0.2;">
+				</div>
+			</section>
+			<section class="section section--md relative">
+				<div class="container">
+					<div class="xl:ml-120">
+						<div class="text-primary-h3 mb-16 sm:max-w-[20ch]">Get Neosify</div>
+						<h2 class="text-primary-h1 font-black mb-32 sm:max-w-[12ch]">
+							<mark class="text-secondary">Kick-start</mark> <br> Your Crypto
+						</h2>
+						<p class="mb-32 sm:max-w-[25ch]">Earn high. Stay Anonymous. <br> An accessible DeFi platform to buy, stake and grow crypto.</p>
+						<a href="/signup" class="btn btn--secondary btn--md min-w-[240px]">
+							<div class="btn__label">Get Started</div>
+							<svg class="icon ">
+								<use xlink:href="img/sprite.svg#icons-bolt"></use>
+							</svg>
+						</a>
+					</div>
+					<img src="/img/black-hand.png" alt="" width="1021" height="638" loading="lazy" class="absolute right-0 bottom-0 max-w-[60%] until-sm:hidden">
+				</div>
+			</section>
+		</main>
+		<!-- end of content -->
+	</div>
+	<!-- end of wrapper -->
+	<!-- scripts -->
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
